@@ -5,7 +5,7 @@ class StoryBrain {
     Story(
         storyTitle:
         'Your car has blown a tire on a winding road in the middle of nowhere with no cell phone reception. You decide to hitchhike. A rusty pickup truck rumbles to a stop next to you. A man with a wide brimmed hat with soulless eyes opens the passenger door for you and asks: "Need a ride, boy?".',
-       choice1: 'I\'ll hop in. Thanks for the help!',
+        choice1: 'I\'ll hop in. Thanks for the help!',
         choice2: 'Better ask him if he\'s a murderer first.'),
     Story(
         storyTitle: 'He nods slowly, unphased by the question.',
@@ -32,12 +32,14 @@ class StoryBrain {
         choice1: 'Restart',
         choice2: '')
   ];
+
+  String getStory() {
+    return _storyData[0].storyTitle;
+  }
 }
 
 
 //TODO: Step 23 - Use the storyNumber property inside getStory(), getChoice1() and getChoice2() so that it gets the updated story and choices rather than always just the first (0th) one.
-
-//TODO: Step 8 - Create a method called getStory() that returns the first storyTitle from _storyData.
 
 //TODO: Step 11 - Create a method called getChoice1() that returns the text for the first choice1 from _storyData.
 
